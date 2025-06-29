@@ -35,3 +35,14 @@ for ( let i = 0 ; i < 5; i++) {
     console.log("idade loop: " + idade)
 }
 
+// Hoisting
+
+x = 10
+var x = 5
+console.log(x)
+
+
+
+let y;
+y = 10
+console.log(y)

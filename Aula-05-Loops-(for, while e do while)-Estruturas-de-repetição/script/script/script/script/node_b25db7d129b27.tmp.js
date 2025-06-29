@@ -63,65 +63,6 @@ let ALEATORIO = 0
 
 
 while(ALEATORIO != 5) {
-    ALEATORIO = Math.floor(Math.random() * 5) + 1
+    ALEATORIO = Math.floor(Math.random() * 99999999999999) + 1
     console.log(ALEATORIO)
 }
-
-// while quando não sei, e o for para quando eu tenho uma noção da onde vai sair
-
-// do while
-// while que garante uma execução
-
-do {
-    console.log('teste')
-} while (1 > 2)
-
-var j = 0
-
-do {
-    console.log('J: ' + j)
-
-    j++
-} while (j > 10)
-
-    // foca em aprender bem o for
-
-// condicionais e loops
-
-// soma de números pares de 0 a 20
-var soma = 0
-var somaImpar = 0
-
-for(let i = 0; i <= 20; i++){
-    if(i % 2 === 0) {
-        soma += i
-    } else {
-        somaImpar += i
-    }
-}
-
-console.log(soma)
-console.log(somaImpar)
-
-// contar quantas consoantes tem uma palavra
-
-const palavra = 'JavaScript'
-
-console.log(palavra.length)
-let consoantes = 0
-
-
-for (let i = 0; i < palavra.length ; i++) {
-    
-    let letra = palavra[i].toLowerCase()
-
-    if(letra != "a" && letra != "e" && letra != "i" && letra != "o" && letra != "u") {
-        consoantes ++
-    }
-}
-
-console.log(`A Contagem de consoantes é: ${consoantes}`)
-
-// interpolação de strings
-
-console.log(`Contagem de consoantes ${consoantes} da palavra ${palavra}`)
